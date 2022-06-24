@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./components/style.css"
+import PureComp from "./components/PureComp";
+import ExPureComp from "./components/ExPureComp";
+import HOC from "./components/HOC";
+import ExHOC1 from "./components/ExHOC1";
+import ExHOC2 from "./components/ExHOC2";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <PureComp />
+      <ExPureComp />
+      <HOC />
+      <ExHOC1 />
+      <ExHOC2 />
+    </>
   );
 }
 
